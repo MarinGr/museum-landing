@@ -4,19 +4,286 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="logo.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Museum</title>
   </head>
   <body>
-    <header>Header</header>
+    <header>
+      <div class="logo">
+        <img src="./images/logo/logo.png" alt="logo" />
+        <p>Louvre</p>
+      </div>
+      <nav>
+        <i class="close-nav-icon fa-solid fa-xmark"></i>
+        <i class="nav-icon fa-regular fa-bars"></i>
+        <ul class="nav-list nav-list--top">
+          <li><a href="#visiting">Visiting</a></li>
+          <li><a href="#explore">Explore</a></li>
+          <li><a href="#video">Video</a></li>
+          <li><a href="#tickets">Tickets</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
-      <section class="welcome">Welcome</section>
-      <section class="visiting">Visiting</section>
-      <section class="explore">Explore</section>
-      <section class="video">Video</section>
-      <section class="tickets">Tickets</section>
-      <section class="contacts">Contacts</section>
+      <section class="welcome">
+        <div class="welcome__text">
+          <h1 class="section__title section__title--welcome">
+            <span>Welcome</span> to the Louvre
+          </h1>
+          <p class="welcome__desc">From the castle to the museum</p>
+          <button class="welcome__btn">Discover the Louvre</button>
+        </div>
+      </section>
+      <section class="visiting" id="visiting">
+        <p class="section__title section__title--gold">Virtual tour</p>
+        <div class="visiting__cards-container">
+          <div class="visiting__card">
+            <img
+              class="card__img"
+              src="./images/visiting-cards/Royal_Palace.jpg"
+              alt="Royal Palace"
+            />
+            <div class="card__text">
+              <h3 class="card__title">Royal Palace</h3>
+              <hr class="card__hr" />
+              <p class="card__desc--360">360° Virtual Tour</p>
+              <p class="card__desc--panorama">Google Street Panorama View</p>
+            </div>
+          </div>
+          <div class="visiting__card">
+            <img
+              class="card__img"
+              src="./images/visiting-cards/Denon_Wing.jpg"
+              alt="Denon Wing"
+            />
+            <div class="card__text">
+              <h3 class="card__title">Denon Wing</h3>
+              <hr class="card__hr" />
+              <p class="card__desc--360">360° Virtual Tour</p>
+              <p class="card__desc--panorama">Google Street Panorama View</p>
+            </div>
+          </div>
+          <div class="visiting__card">
+            <img
+              class="card__img"
+              src="./images/visiting-cards/Colonnade Perrault.jpg"
+              alt="Colonnade Perrault"
+            />
+            <div class="card__text">
+              <h3 class="card__title">Colonnade Perrault</h3>
+              <hr class="card__hr" />
+              <p class="card__desc--360">360° Virtual Tour</p>
+              <p class="card__desc--panorama">Google Street Panorama View</p>
+            </div>
+          </div>
+          <div class="visiting__card">
+            <img
+              class="card__img"
+              src="./images/visiting-cards/Greek_Hall.jpg"
+              alt="Greek hall"
+            />
+            <div class="card__text">
+              <h3 class="card__title">Greek hall</h3>
+              <hr class="card__hr" />
+              <p class="card__desc--360">360° Virtual Tour</p>
+              <p class="card__desc--panorama">Google Street Panorama View</p>
+            </div>
+          </div>
+          <div class="visiting__card">
+            <img
+              class="card__img"
+              src="./images/visiting-cards/Mona_Lisa.jpg"
+              alt="Mona Lisa"
+            />
+            <div class="card__text">
+              <h3 class="card__title">Mona Lisa</h3>
+              <hr class="card__hr" />
+              <p class="card__desc--360">360° Virtual Tour</p>
+              <p class="card__desc--panorama">Google Street Panorama View</p>
+            </div>
+          </div>
+          <div class="visiting__card">
+            <img
+              class="card__img"
+              src="./images/visiting-cards/Night_Palace.jpg"
+              alt="Night Palace"
+            />
+            <div class="card__text">
+              <h3 class="card__title">Night Palace</h3>
+              <hr class="card__hr" />
+              <p class="card__desc--360">360° Virtual Tour</p>
+              <p class="card__desc--panorama">Google Street Panorama View</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="explore" id="explore">
+        <div class="explore__text">
+          <p class="section__title section__title--white">Picture explore</p>
+          <p class="explore__desc">
+            Las Meninas is a 1656 painting by Diego Velázquez, the leading
+            artist of the Spanish Golden Age.
+          </p>
+          <p class="explore__desc">
+            It was cleaned in 1984 to remove a
+            <span class="explore__desc--gold">"yellow veil"</span> of dust that
+            had gathered since the previous restoration in the 19th century.
+          </p>
+          <p class="explore__desc">
+            The cleaning provoked furious protests, not because the picture had
+            been damaged in any way, but because it looked different.
+          </p>
+        </div>
+        <img
+          class="explore__img"
+          src="./images/section-images/explore-img.png"
+          alt="Las Meninas painting"
+        />
+      </section>
+      <section class="video" id="video">
+        <div class="video__text">
+          <p class="section__title section__title--gold">Video journey</p>
+          <p class="video__desc">
+            Enter and visit one of the most famous museums in the world and
+            enjoy masterpieces such as Mona Lisa or Hammurabi's Code
+          </p>
+        </div>
+        <iframe
+          class="video__video"
+          src="https://www.youtube.com/embed/zp1BXPX8jcU"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        >
+        </iframe>
+      </section>
+      <section class="tickets" id="tickets">
+        <p class="section__title section__title--white">Buy Tickets</p>
+        <div class="tickets__content">
+          <img
+            class="tickets__img"
+            src="/images/section-images/tickets-img.png"
+            alt="tickets"
+          />
+          <img
+            class="tickets__img--small"
+            src="/images/section-images/tickets-img-small.png"
+            alt="tickets"
+          />
+          <div class="tickets__ticket-types">
+            <p class="tickets__title">Ticket Type</p>
+            <div class="ticket-types__input-group">
+              <input type="radio" id="permanent" name="ticket-type" />
+              <label for="permanent">Permanent exhibition</label>
+            </div>
+            <div class="ticket-types__input-group">
+              <input type="radio" id="temporary" name="ticket-type" />
+              <label for="temporary">Temporary exhibition</label>
+            </div>
+            <div class="ticket-types__input-group">
+              <input type="radio" id="combined" name="ticket-type" />
+              <label for="combined">Combined Admission</label>
+            </div>
+          </div>
+          <div class="tickets__amount">
+            <p class="tickets__title">Amount</p>
+
+            <div class="amount__input-group">
+              <label>Basic 18+</label>
+              <div class="amount__controls">
+                <button>—</button>
+                <input type="number" id="1" name="amount" value="1" />
+                <button>+</button>
+              </div>
+            </div>
+            <div class="amount__input-group">
+              <label>Senior 65+</label>
+              <div class="amount__controls">
+                <button>—</button>
+                <input type="number" id="2" name="amount" value="1" />
+                <button>+</button>
+              </div>
+            </div>
+            <p class="tickets__title amount__total">Total $220</p>
+            <button class="tickets__submit-btn">Buy now</button>
+          </div>
+        </div>
+      </section>
+      <section class="contacts" id="contacts">
+        <p class="section__title section__title--gold">Contacts</p>
+        <div class="contacts__content">
+          <div class="contacts__text">
+            <p class="contacts__name">Palais Royal Musee du Louvre</p>
+            <p class="contacts__desc">address: 75001 Paris, France</p>
+            <p class="contacts__desc">phone: +33(0) 1 40 20 50 50</p>
+            <p class="contacts__desc">mail: info@louvre.fr</p>
+          </div>
+          <img
+            class="contacts__img"
+            src="./images/section-images/map-img.png"
+            alt="map"
+          />
+          <img
+            class="contacts__img--small"
+            src="./images/section-images/map-img-small.png"
+            alt="map"
+          />
+        </div>
+      </section>
     </main>
-    <footer>Footer</footer>
+    <footer class="footer">
+      <div class="footer__contact-info">
+        <div class="logo logo--footer">
+          <img src="./images/logo/logo.png" alt="logo" />
+          <p>LOUVRE</p>
+        </div>
+        <nav class="footer__nav">
+          <ul class="nav-list nav-list--bottom">
+            <li><a href="#visiting">Visiting</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#tickets">Tickets</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+        <div class="footer__social-icons">
+          <img class="footer__icon" src="./images/icons/VK.png" alt="vk" />
+          <img
+            class="footer__icon"
+            src="./images/icons/Telegram.png"
+            alt="telegram"
+          />
+          <img
+            class="footer__icon"
+            src="./images/icons/YouTube.png"
+            alt="youtube"
+          />
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p class="footer__year">2022</p>
+        <p class="footer__rs">The Rolling Scopes School</p>
+        <p class="footer__user">MarinGr</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
