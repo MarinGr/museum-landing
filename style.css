@@ -151,7 +151,7 @@ section {
   display: flex;
   align-items: center;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(/images/section-images/welcome-img.jpg) no-repeat;
+    url(./images/section-images/welcome-img.jpg) no-repeat;
   background-position: right top;
 }
 
